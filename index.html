@@ -36,22 +36,39 @@
         <img src="images/stars.png" id="stars">
         <img src="images/moon.png" id="moon">
         <img src="images/mountains_behind.png" id="mountain_behind">
-        <h2 id="text">AXOLOTL</h2>
-        <a href="#" id="btn">Explore</a>
+        <h2 id="text">AXOLOTL SIUWI</h2>
+        <a href="#sec" id="btn">Explore</a>
         <img src="images/mountains_front.png" id="mountain_front">
-
     </section>
 
 
-    <main>
-
-    </main>
-
-    <footer>
-        
-    </footer>
+    <div class="sec" id="sec">
+        <h2>Ajolotes para todos</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eaque fugiat iusto optio quae sapiente ipsum ducimus sunt unde, illum minus ullam libero eius cupiditate dignissimos quas totam recusandae necessitatibus?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eaque fugiat iusto optio quae sapiente ipsum ducimus sunt unde, illum minus ullam libero eius cupiditate dignissimos quas totam recusandae necessitatibus? <br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eaque fugiat iusto optio quae sapiente ipsum ducimus sunt unde, illum minus ullam libero eius cupiditate dignissimos quas totam recusandae necessitatibus? </p>
 
 
-<script src="style/actions.js"></script>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountain_behind = document.getElementById('mountain_behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountain_front = document.getElementById('mountain_front')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value *0.25 + 'px';
+            moon.style.top = value *1.05 + 'px';
+            mountain_behind.style.top = value *0.5 + 'px';
+            mountain_front.style.top = value *0 + 'px';
+            text.style.marginRight = value *3.5 + 'px';
+            text.style.marginTop = value *1.5 + 'px';
+            btn.style.marginTop = value *1.5 + 'px';
+            
+        })
+    </script>
+
 </body>
 </html>
