@@ -4,7 +4,7 @@ function captxt(id){
         alert("Enter data")
         document.getElementById(id).focus();
     }else{
-        console.log(element)
+        alert(element)
     }
 
 }
