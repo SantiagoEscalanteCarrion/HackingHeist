@@ -14,38 +14,36 @@
 </head>
 <body>
     <header>
-        <div id="hijoHeaderUno">
-            <h1 id="tituloHeader">AJOLOTES SIUWI</h1>
-        </div>
-        <div id="hijoHeaderDos">
-            <a href="index.html"><img src="images/ajoloteLogo.png" alt="Logo"></a>
-        </div>
-    </header>
 
-    <nav>
+        <a href="index.html"><img src="images/ajoloteLogo.png" alt="Logo"></a>
         <ul>
             <li>
-                <a id="textNav" href="index.html">HOME</a>
+                <a id="textNav" href="index.html" class="active">Home</a>
             </li>
             <li>
-                <a id="textNav" href="pages/information.html">INFORMATION</a>
+                <a id="textNav" href="pages/information.html">Information</a>
             </li>
             <li>
-                <a id="textNav" href="pages/gallery.html">GALLERY</a>
+                <a id="textNav" href="pages/gallery.html">Gallery</a>
             </li>
             <li>
-                <a id="textNav" href="pages/community.html">COMMUNITY</a>
+                <a id="textNav" href="pages/community.html">Community</a>
             </li>
         </ul>
-    </nav>
+    </header>
+
+    <section>
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountain_behind">
+        <a href="#" id="btn">Explore</a>
+        <img src="images/mountains_front.png" id="mountain_front">
+
+    </section>
+
 
     <main>
-        <div id="hijoIndexUno">
-            <form>
-                <input type="text" name="txtexample" id="txtexample" placeholder="Enter text" size="50"><br>
-                <button type="button" onclick="captxt('txtexample')">GO</button>
-            </form>
-        </div>
+
     </main>
 
     <footer>
@@ -53,6 +51,6 @@
     </footer>
 
 
-<script type="text/javascript" scr="style/actions.js"></script>
+<script src="style/actions.js"></script>
 </body>
 </html>
