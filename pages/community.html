@@ -38,10 +38,28 @@
         <button id="submit">Submit</button>
     </section>
 
-    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js"></script> 
-    <script src="../style/actions.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyC3bxEwooJLDHoscUx5uoZ1XuPtTZIntJo",
+          authDomain: "ajolote-82390.firebaseapp.com",
+          projectId: "ajolote-82390",
+          storageBucket: "ajolote-82390.appspot.com",
+          messagingSenderId: "751307796942",
+          appId: "1:751307796942:web:ba7ec7b78e6662bae2fb9f"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        import{getDatabase,ref,set,child,update,remove} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js";
+
+        const db = getDatabase();
+      </script>
 
 </body>
 </html>
