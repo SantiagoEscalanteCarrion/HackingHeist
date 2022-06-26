@@ -30,6 +30,184 @@ header {
   font-family: 'Rubik Moonrocks', cursive;
   color: #3d00f5; }
 
+header img {
+  width: 25%;
+  height: 25%; }
+
+nav {
+  background-color: white; }
+
+#textNav {
+  color: #e4bd73;
+  text-decoration: none; }
+  #textNav:hover {
+    color: black; }
+
+section{
+  position: relative;
+  width: 100;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522,transparent);
+  z-index: 1000;
+}
+
+section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+section img#moon{
+  mix-blend-mode: screen;
+  transform: translateY(-110px);
+}
+section img#mountain_behind{
+  transform: translateY(-190px);
+}
+section img#mountain_front{
+  z-index: 10;
+}
+#text{
+  position: absolute;
+  right: -400px;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 3.5vw;
+  z-index: 9;
+  font-family: 'Permanent Marker', cursive;
+  transform: translateY(-200px);
+}
+#btn{
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(-70px);
+}
+
+.sec{
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+}
+.sec h2{
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.sec p{
+  font-size: 2em;
+  color: #fff;
+}
+
+header img {
+  width: 25%;
+  height: 25%; }
+
+nav {
+  background-color: white; }
+
+#textNav {
+  color: #e4bd73;
+  text-decoration: none; }
+  #textNav:hover {
+    color: black; }
+
+section{
+  position: relative;
+  width: 100;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522,transparent);
+  z-index: 1000;
+}
+
+section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+section img#moon{
+  mix-blend-mode: screen;
+  transform: translateY(-110px);
+}
+section img#mountain_behind{
+  transform: translateY(-190px);
+}
+section img#mountain_front{
+  z-index: 10;
+}
+#text{
+  position: absolute;
+  right: -400px;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 3.5vw;
+  z-index: 9;
+  font-family: 'Permanent Marker', cursive;
+  transform: translateY(-200px);
+}
+#btn{
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(-70px);
+}
+
+.sec{
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+}
+.sec h2{
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.sec p{
+  font-size: 2em;
+  color: #fff;
+}
+
 img {
   width: 100%;
   height: 100%; }
@@ -61,7 +239,15 @@ li {
 #grillaInfo {
   display: grid;
   grid-template-rows: 75px 375px 75px 400px 75px 375px 75px 425px 75px;
-  grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9"; }
+  grid-template-areas: "a1"
+ "a2"
+ "a3"
+ "a4"
+ "a5"
+ "a6"
+ "a7"
+ "a8"
+ "a9"; }
 
 #contInfo {
   display: flex;
