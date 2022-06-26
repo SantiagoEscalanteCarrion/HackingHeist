@@ -110,19 +110,23 @@ section img{
 }
 section img#moon{
   mix-blend-mode: screen;
+  transform: translateY(-110px);
+}
+section img#mountain_behind{
+  transform: translateY(-190px);
 }
 section img#mountain_front{
   z-index: 10;
 }
 #text{
   position: absolute;
-  right: -200px;
+  right: -400px;
   color: #fff;
   white-space: nowrap;
   font-size: 3.5vw;
   z-index: 9;
   font-family: 'Permanent Marker', cursive;
-  transform: translateY(-50px);
+  transform: translateY(-200px);
 }
 #btn{
   text-decoration: none;
@@ -132,7 +136,7 @@ section img#mountain_front{
   color: #2b1055;
   font-size: 1.5em;
   z-index: 9;
-  transform: translateY(15px);
+  transform: translateY(-70px);
 }
 
 .sec{
